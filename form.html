@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porosia</title>
+</head>
+<body>
+    <form method="get" >
+    <fieldset>
+        
+        <legend>Order Tiramisu & More</legend>
+        <br>
+        <label for="cake">Sweets</label>
+       <select name="cake" id="cake">
+       <option value="">Tiramisu</option>
+       <option value="">Bakllave</option>
+       <option value="">Sachercake</option>
+       <option value="">CheeseCake</option>
+       <option value="">Ekler</option>   
+    </select>
+    <br><br>
+    
+    <p>Size of sweets</p>
+        <input type="radio" id="small" name="size" value="small">
+        <label for="small">Small</label>
+        <input type="number" value="pieces" min="0" max="10" placeholder="Pieces">
+        <br><br>
+        <input type="radio" name="size" id="medium" value="mediuam">
+        <label for="medium">Meedium</label>
+        <input type="number" value="pieces" min="0" max="10" placeholder="Pieces">
+        <br><br>
+        <input type="radio" id="large" name="size" value="large">
+        <label for="large">Large</label>
+        <input type="number" value="pieces" min="0" max="10" placeholder="Pieces" >
+        <br><br>
+        
+        <p>Drinks</p>
+        <select name="drinks" id="drinks">
+            <optgroup label=""></optgroup>
+            <option value="">Coca Cole</option>
+           
+            <option value="">Fanta</option>
+   
+            <option value="">Juice</option>
+
+    
+        </select>
+   
+    <br><br>
+
+  <p><strong>Te dhenat e juaja</strong></p>
+  
+      Name:  <input type="text" name="name" placeholder="Name">
+        <br><br>
+       LastName: <input type="text" name="lastname" placeholder="LastName">
+        <br><br>
+      Number:  <input type="number" name="mob" placeholder="Number" required pattern="\d{9}" >
+        <br><br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </fieldset>
+    
+</form>
+<br><br>
+
+
+<input type="submit"  value="Porosit">
+<input type="submit" value="Reset">
+   <br><br>
+
+<a href="/index1.html">Go Back</a>
+</body>
+</html>
