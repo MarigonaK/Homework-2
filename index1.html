@@ -84,10 +84,15 @@
             color: darkorchid;
         }
 
-        #style::before {
-            content: '*';
-            color: red;
+        #style::after {
+            content: '?';
+            color: darkmagenta;
             font-size: 20px;
+        }
+
+        #style {
+            color: blueviolet;
+            font-size: 25px;
         }
 
         .first:hover {
@@ -97,6 +102,12 @@
 
         .second:hover {
             background-color: blueviolet;
+        }
+
+        .table {
+            border-left: 5px solid darkblue;
+            padding-left: 20px;
+            margin-left: 20px;
         }
     </style>
 
@@ -144,13 +155,17 @@
         <img src="./images/tiramisu.jpg" alt="Foto e fundit" class="size">
         <br> <br>
 
-        <p id="style"><b>Common Tiramisy Question</b></p>
+        <p id="style"><b>Common Tiramisy Question-Ansered</b></p>
         <dl>
             <dt> <b> What kind of rum do i user in tiramisu? </b></dt>
-            <dd> Dark rum is the best,but you can us brandy</dd>
+            <dd class="table"> Dark rum is the best,but you can us brandy or your fvorite coffee liqueur.</dd>
             <br>
             <dt> <b> Are the eggs cooked? </b></dt>
-            <dd> Tiramisu is a no-bake dessert.The eggs yolks are gentlu cooked</dd>
+            <dd class="table"> Tiramisu is a no-bake dessert.The eggs yolks are gentlu cooked on the stovetop,but the
+                egg whites are raw.Purchase pasteurized eggs</dd>
+            <dt> <b> What size pan to use? </b></dt>
+            <dd class="table"> This particular tiramisu recipe yield a large volume and the pan will be very full.Make
+                sure your pan si large enough.I recommend a 9x13 inc dish with at least a 12-14 cup capacity.</dd>
         </dl>
 
 
