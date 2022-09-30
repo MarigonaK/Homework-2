@@ -5,29 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receta per Tiramisu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Poppins&display=swap" rel="stylesheet">
 
     <style>
+        /* body {
+            margin: 0px 100px 0px 100px;
+            border: 10px solid white;
+            padding: 40px;
+            margin: 30px;
+        }*/
+
         * {
             background-color: lavender;
         }
 
-        h1 {
-            color: indigo
+        h2 {
+            color: indigo;
+
+
+        }
+
+        h2::first-letter {
+            font-size: 50px;
         }
 
         img {
-            width: 300px;
-            text-align: center;
-            border: 3px solid black;
+            width: 250px;
+            border: 8px ridge darkmagenta;
+            margin-left: 80px;
+            padding: 5px;
+            /*display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;*/
+
         }
 
-        div {
-            margin-left: 300px;
+        .container {
+            margin-left: 700px;
             border: 10px solid white;
             padding: 40px;
             margin: 30px;
-
+            font-family: 'Alkalami', serif;
         }
 
         ul li::marker {
@@ -38,26 +59,30 @@
         .first {
             position: absolute;
             color: darkorchid;
-            right: 200px;
+            right: 250px;
             font-size: 18px;
+            position: absolute;
+            top: 80px;
         }
 
         .second {
             position: absolute;
             color: darkorchid;
             ;
-            right: 100px;
+            right: 150px;
             font-size: 18px;
+            position: absolute;
+            top: 80px;
         }
 
-        .size {
-            text-align: center;
-            width: 300px;
 
 
+        .size::first-letter {
+            font-size: 30px;
+            color: blueviolet;
         }
 
-        #border {
+        .border {
             border-left: 5px solid darkblue;
             padding-left: 15px;
             margin-left: 15px;
@@ -67,6 +92,7 @@
 
         strong {
             color: darkorchid;
+            font-size: 20px;
         }
 
         i {
@@ -112,13 +138,46 @@
             padding-left: 20px;
             margin-left: 20px;
         }
+
+        h3+p::first-letter {
+            font-size: 50px;
+
+        }
+
+        .table {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .td {
+            color: darkmagenta;
+        }
+
+        .size {
+            text-indent: 20px;
+            line-height: 1.5em;
+
+
+        }
+
+        ul {
+            list-style-position: inside;
+            padding: 0px;
+            list-style-type: '🔹';
+        }
+
+        #special {
+
+            margin-left: 5px;
+            width: 300px;
+
+        }
     </style>
 
 </head>
 
 <body>
-    <div>
-        <h1>Tiramisu</h1>
+    <div class="container">
+        <h2>Tiramisu</h2>
         <p>Posted on <i> June 13,2019/</i> posted in <a href="#" id="first">No-Bake-Recepies</a>
 
             <a href="form.html" class="first">Porosit</a>
@@ -126,14 +185,15 @@
             <a href="location.html" class="second">Lokacioni</a>
 
         </p>
-        <img src="./images/s1.jpg" alt="Foto e pare">
+        <img id='special1' src="./images/s1.jpg" alt="Foto e pare">
         <img src="./images/s2.jpg" alt="Foto e dyte">
         <img src="./images/s3.jpg" alt="Foto e trete">
         <p> <strong>Tiramisu</strong> is a tiomeless no-bake dessert.I know that concerns some people. And in fact,
             somewhere along the lines of history, someone (non Italian!) <br> got scared about eating raw eggs so they
             decided to start making Tiramisu using tempered eggs (eggs whisked over a water bath). </p>
 
-        <p id="border"> A couple months ago, I was sent a new cookbokk.Pour the coffee into a shallow dish. Dip in a few
+        <p class="border"> A couple months ago, I was sent a new cookbokk.Pour the coffee into a shallow dish. Dip in a
+            few
             of the spongefingers at a time, turning for a <br> few seconds until they are nicely soaked, but not soggy.
             Layer these
             in a dish until you’ve used half the sponge fingers, then spread over half of the creamy mixture.</p>
@@ -148,30 +208,26 @@
             <li>2 cups (480ml) heavy cream or heavy whipping cream)</li>
         </ul>
         <br>
-        <p>For thos not familiar,Maida is an icon,espieciaally in the baking wordl.A creamy dessert of
-            espresso-soaked
-            ladyfingers <br> surrounded by lightly sweetened whipped cream and a rich mascarpone, tiramisù relies
-            heavily on
-            the quality of its ingredients. <br> If you don’t have a barista setup at home, pick up the espresso at a
-            local
-            coffee shop, or use strongly brewed coffee. As for the ladyfingers.She passed away only 2 months after this
-            book was published. </p>
-        <img src="./images/tiramisu.jpg" alt="Foto e fundit">
+        <p class="size">For thos not familiar,Maida is an icon,espieciaally in the baking wordl.A creamy dessert of
+            espresso-soaked ladyfingers surrounded by lightly sweetened whipped cream and a rich mascarpone, tiramisù
+            relies heavily on the quality of its ingredients. If you don’t have a barista setup at home, pick up the
+            espresso at a local coffee shop, or use strongly brewed coffee.She passed away only
+            2 monthsafter this book was published. </p>
+        <img id='special' src="./images/tiramisu.jpg" alt="Foto e fundit">
         <br> <br>
 
         <p id="style"><b>Common Tiramisy Question-Ansered</b></p>
         <dl>
-            <dt> <b> What kind of rum do i user in tiramisu? </b></dt>
+            <dt class="td"> What kind of rum do i user in tiramisu? </dt>
             <dd class="table"> Dark rum is the best,but you can us brandy or your fvorite coffee liqueur.</dd>
             <br>
-            <dt> <b> Are the eggs cooked? </b></dt>
+            <dt class="td"> Are the eggs cooked? </dt>
             <dd class="table"> Tiramisu is a no-bake dessert.The eggs yolks are gentlu cooked on the stovetop,but the
                 egg whites are raw.Purchase pasteurized eggs</dd>
-            <dt> <b> What size pan to use? </b></dt>
+            <dt class="td"> What size pan to use? ></dt>
             <dd class="table"> This particular tiramisu recipe yield a large volume and the pan will be very full.Make
                 sure your pan si large enough.I recommend a 9x13 inc dish with at least a 12-14 cup capacity.</dd>
         </dl>
-
 
     </div>
 </body>
