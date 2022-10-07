@@ -16,45 +16,22 @@
             border-radius: 30px;
             border: 4px solid rgb(231, 214, 231);
             transform: translate(10px, 10px);
-            /*  box-shadow: 60px -16px rgb(173, 180, 180);*/
-            animation: wiggle 2s linear infinite;
+            animation: wiggle 4s infinite;
         }
 
         @keyframes wiggle {
 
-            0%,
-            7% {
-                transform: rotateZ(0);
+            from {
+                left: 700px;
             }
 
-            15% {
-                transform: rotateZ(-15deg);
-            }
-
-            20% {
-                transform: rotateZ(10deg);
-            }
-
-            25% {
-                transform: rotateZ(-10deg);
-            }
-
-            30% {
-                transform: rotateZ(6deg);
-            }
-
-            35% {
-                transform: rotateZ(-4deg);
-            }
-
-            40%,
-            100% {
-                transform: rotateZ(0);
+            to {
+                left: 800px;
             }
         }
 
         body {
-            background-color: rgb(215, 192, 239)
+            background-color: rgba(245, 245, 245, 0.664)
         }
 
         a {
@@ -118,18 +95,12 @@
 
         legend,
         fieldset {
-            border: 5px solid rgb(137, 126, 126);
+            border: 5px solid rgb(209, 197, 237);
             background-color: lavender;
             border-radius: 0.25rem;
 
         }
 
-        #outer {
-            position: relative;
-            left: 70px;
-            top: -50px;
-
-        }
 
         .sekond {
             border: 5px solid;
@@ -192,40 +163,37 @@
                 <option value="">Juice</option>
             </select>
             <br><br>
-            <div id="outer">
-                <video src="./assets/istockphoto-801617668-640_adpp_is.mp4" width="400px" height="400p;x" controls
-                    loop></video>
-            </div><br><br>
-            <fieldset id="cont2">
-                <legend class="sekond">
-                    <h3 class="third">Te dhenat e juaja</h3>
-                </legend>
 
 
-                <label for="fname">FirstName</label>
 
-                <input type="text" name="name" placeholder="Your first Name..">
-                <br><br>
-                <label for="lname">Last Name</label>
-                <input type="text" name="lastname" placeholder="Your Last Name ..">
-                <br><br>
-                <label for="mob">Number</label>
-                <input type="number" name="mob" placeholder="Your phone number.." required pattern="\d{9}">
-                <br><br>
+            <h3 class="third">Te dhenat e juaja</h3>
 
-                <div>
-                    <label for="message">Message</label>
-                </div>
 
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
-                <br><br>
-                <input type="submit" value="Porosit">
-                <input type="submit" value="Reset">
-                <br><br>
+            <label for="fname">FirstName</label>
 
-                <a href="./index1.html">Go Back</a>
-            </fieldset>
+            <input type="text" name="name" placeholder="Your first Name..">
+            <br><br>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lastname" placeholder="Your Last Name ..">
+            <br><br>
+            <label for="mob">Number</label>
+            <input type="number" name="mob" placeholder="Your phone number.." required pattern="\d{9}">
+            <br><br>
+
+            <div>
+                <label for="message">Message</label>
+            </div>
+
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+            <br><br>
+            <input type="submit" value="Porosit">
+            <input type="submit" value="Reset">
+            <br><br>
+
+            <a href="./index1.html">Go Back</a>
+
 
 
             <img src="./images/pexels-photo-7783241.jpeg" alt="">
