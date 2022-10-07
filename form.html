@@ -8,11 +8,77 @@
     <title>Porosia</title>
 
     <style>
+        img {
+            top: 200px;
+            width: 300px;
+            position: absolute;
+            right: 200px;
+            border-radius: 30px;
+            border: 4px solid rgb(231, 214, 231);
+            transform: translate(10px, 10px);
+            /*  box-shadow: 60px -16px rgb(173, 180, 180);*/
+            animation: wiggle 2s linear infinite;
+        }
+
+        @keyframes wiggle {
+
+            0%,
+            7% {
+                transform: rotateZ(0);
+            }
+
+            15% {
+                transform: rotateZ(-15deg);
+            }
+
+            20% {
+                transform: rotateZ(10deg);
+            }
+
+            25% {
+                transform: rotateZ(-10deg);
+            }
+
+            30% {
+                transform: rotateZ(6deg);
+            }
+
+            35% {
+                transform: rotateZ(-4deg);
+            }
+
+            40%,
+            100% {
+                transform: rotateZ(0);
+            }
+        }
+
+        body {
+            background-color: rgb(215, 192, 239)
+        }
+
+        a {
+            color: darkorchid;
+
+            font-size: 18px;
+        }
+
+        a:hover {
+            background-color: rgb(185, 172, 198);
+            font-size: 15px;
+        }
+
+        input[type=submit]:hover {
+            background-color: rgb(185, 172, 198);
+            font-size: 15px;
+        }
+
+
         input[type=button],
         input[type=submit] {
-            background-color: blueviolet;
-            color: white;
-            border: 2px solid plum;
+            background-color: rgb(200, 178, 200);
+            color: rgb(64, 44, 51);
+            border: 2px solid rgb(237, 217, 237);
         }
 
         label {
@@ -24,33 +90,60 @@
             width: 20%;
             padding: 10px;
             border-radius: 10px;
-            background-color: lavenderblush
+            background-color: rgb(231, 214, 231);
         }
 
         form {
             box-sizing: border-box;
-            padding: 1rem;
+            padding: 30px;
             border-radius: 1rem;
-            background-color: hsl(0, 0%, 100%);
+            background-color: lavender;
             border: 4px solid hsl(0, 0%, 90%);
             gap: 2rem;
 
         }
 
+        .third {
+            color: rgb(88, 72, 103);
+
+        }
+
+
 
         input[type=text],
         input[type=number] {
-            background-color: lavender;
-            color: blueviolet;
+            background-color: rgb(231, 214, 231);
+            color: wheat;
         }
 
         legend,
-        fieldset,
-        textarea {
-            border: 2px solid #333;
-            background-color: thistle;
+        fieldset {
+            border: 5px solid rgb(137, 126, 126);
+            background-color: lavender;
             border-radius: 0.25rem;
 
+        }
+
+        #outer {
+            position: relative;
+            left: 70px;
+            top: -50px;
+
+        }
+
+        .sekond {
+            border: 5px solid;
+            border-color: rgb(186, 190, 244) rgb(191, 158, 223) rgb(157, 117, 157) rgb(189, 171, 226);
+
+        }
+
+        textarea {
+            border: 5px solid rgb(172, 136, 163);
+            background-color: lavender
+        }
+
+        #cont2 {
+            border: 5px solid rgb(244, 238, 238)
         }
     </style>
 </head>
@@ -58,10 +151,11 @@
 <body>
     <form method="get">
         <fieldset>
+            <legend class="sekond">
 
-            <legend>
-                <h4>Order Tiramisu & More</h4>
+                <h4 class=" third">Order Tiramisu & More</h4>
             </legend>
+
             <br>
             <label for="cake">Sweets</label>
             <select name="cake" id="cake">
@@ -72,6 +166,7 @@
                 <option value="">Ekler</option>
             </select>
             <br><br>
+
 
             <p>Size of sweets</p>
             <input type="radio" id="small" name="size" value="small">
@@ -95,44 +190,51 @@
                 <option value="">Fanta</option>
 
                 <option value="">Juice</option>
-
-
             </select>
-
             <br><br>
+            <div id="outer">
+                <video src="./assets/istockphoto-801617668-640_adpp_is.mp4" width="400px" height="400p;x" controls
+                    loop></video>
+            </div><br><br>
+            <fieldset id="cont2">
+                <legend class="sekond">
+                    <h3 class="third">Te dhenat e juaja</h3>
+                </legend>
 
-            <p>
-            <h3>Te dhenat e juaja</h3>
-            </p>
-            <label for="fname">FirstName</label>
 
-            <input type="text" name="name" placeholder="Your first Name..">
+                <label for="fname">FirstName</label>
+
+                <input type="text" name="name" placeholder="Your first Name..">
+                <br><br>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lastname" placeholder="Your Last Name ..">
+                <br><br>
+                <label for="mob">Number</label>
+                <input type="number" name="mob" placeholder="Your phone number.." required pattern="\d{9}">
+                <br><br>
+
+                <div>
+                    <label for="message">Message</label>
+                </div>
+
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <br><br>
+                <input type="submit" value="Porosit">
+                <input type="submit" value="Reset">
+                <br><br>
+
+                <a href="./index1.html">Go Back</a>
+            </fieldset>
+
+
+            <img src="./images/pexels-photo-7783241.jpeg" alt="">
+
+            </video>
             <br><br>
-            <label for="lname">Last Name</label>
-            <input type="text" name="lastname" placeholder="Your Last Name ..">
-            <br><br>
-            <label for="mob">Number</label>
-            <input type="number" name="mob" placeholder="Your phone number.." required pattern="\d{9}">
-            <br><br>
-
-            <div>
-                <label for="message">Message</label>
-            </div>
-
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
 
         </fieldset>
-
     </form>
-    <br><br>
-
-
-    <input type="submit" value="Porosit">
-    <input type="submit" value="Reset">
-    <br><br>
-
-    <a href="/index1.html">Go Back</a>
 </body>
 
 </html>
